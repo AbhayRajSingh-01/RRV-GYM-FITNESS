@@ -38,7 +38,7 @@ export default function Navbar() {
               <path d="M6.5 6.5h11M6.5 17.5h11M3 10h3.5v4H3zM17.5 10H21v4h-3.5zM6.5 6.5v4M6.5 13.5v4M17.5 6.5v4M17.5 13.5v4M6.5 10h11v4h-11z" />
             </svg>
           </span>
-          RRV <span className="logo-accent">GYM</span>
+          RRV <span className="logo-accent">GYM FITNESS</span>
         </Link>
         <nav className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
           {navItems.map(({ label, to }) => (
