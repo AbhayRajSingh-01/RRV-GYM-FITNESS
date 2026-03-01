@@ -1,0 +1,24 @@
+/* Base reset — App.css handles all styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #000;
+  color: #f3f4f6;
+}
+
+#root {
+  min-height: 100vh;
+}
