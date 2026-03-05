@@ -2005,6 +2005,24 @@ ul {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.95);
+    border-bottom-color: rgba(239, 68, 68, 0.12);
+  }
+
+  .nav-inner {
+    padding: 0 1rem;
+    height: 4.25rem;
+  }
+
+  .logo {
+    font-size: 1.15rem;
+  }
+
+  .nav-right {
+    gap: 0.5rem;
+  }
+
   .intro-text {
     flex-wrap: wrap;
     justify-content: center;
@@ -2042,6 +2060,10 @@ ul {
     transform: translateY(-120%);
     transition: transform var(--transition);
     border-bottom: 1px solid var(--gray-800);
+    height: calc(100vh - 4.5rem);
+    overflow-y: auto;
+    align-items: flex-start;
+    z-index: 110;
   }
 
   .nav-links.open {
