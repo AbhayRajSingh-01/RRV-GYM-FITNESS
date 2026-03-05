@@ -6,6 +6,7 @@ import './App.css'
 
 export default function App() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
+  const [showIntro, setShowIntro] = useState(true)
 
   // Cursor glow (desktop only)
   useEffect(() => {
@@ -14,6 +15,12 @@ export default function App() {
     const move = (e) => setMousePos({ x: e.clientX, y: e.clientY })
     window.addEventListener('mousemove', move)
     return () => window.removeEventListener('mousemove', move)
+  }, [])
+
+  // Intro splash timing
+  useEffect(() => {
+    const timer = setTimeout(() => setShowIntro(false), 2600)
+    return () => clearTimeout(timer)
   }, [])
 
   return (
@@ -28,11 +35,26 @@ export default function App() {
         ))}
       </div>
 
-      <Navbar />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
+      {showIntro && (
+        <div className="intro-overlay" aria-hidden="true">
+          <div className="intro-backdrop" />
+          <div className="intro-text">
+            <span className="intro-word">RRV</span>
+            <span className="intro-word accent">GYM</span>
+            <span className="intro-word">FITNESS</span>
+          </div>
+        </div>
+      )}
+
+      {!showIntro && (
+        <>
+          <Navbar />
+          <main>
+            <Outlet />
+          </main>
+          <Footer />
+        </>
+      )}
     </div>
   )
 }

@@ -110,29 +110,69 @@ export default function Home() {
             <span className="hero-badge">No. 1 Premium Fitness Club</span>
           </Reveal>
           <Reveal delay={200}>
-            <h1>FORGE YOUR<br /><span className="text-gradient">STRONGEST</span><br />SELF</h1>
+            <h1>
+              FORGE YOUR
+              <br />
+              <span className="text-gradient">STRONGEST</span>
+              <br />
+              SELF
+            </h1>
           </Reveal>
           <Reveal delay={350}>
-            <p className="hero-desc">Premium training, world-class equipment, and a relentless community. This is where transformation begins.</p>
+            <p className="hero-desc">
+              Premium training, world-class equipment, and a relentless community. This is where
+              transformation begins.
+            </p>
           </Reveal>
           <Reveal delay={500}>
             <div className="hero-actions">
               <Link to="/membership" className="btn btn-primary btn-lg btn-glow">
                 Start Your Journey
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
               </Link>
-              <a href="#programs" className="btn btn-outline btn-lg">Explore Programs</a>
+              <a href="#programs" className="btn btn-outline btn-lg">
+                Explore Programs
+              </a>
             </div>
           </Reveal>
           <Reveal delay={650}>
             <div className="hero-stats">
-              <div className="stat"><span className="stat-num"><AnimatedCounter target="10000" suffix="+" /></span><span className="stat-label">Members</span></div>
+              <div className="stat">
+                <span className="stat-num">
+                  <AnimatedCounter target="10000" suffix="+" />
+                </span>
+                <span className="stat-label">Members</span>
+              </div>
               <div className="stat-divider" />
-              <div className="stat"><span className="stat-num"><AnimatedCounter target="50" suffix="+" /></span><span className="stat-label">Equipment</span></div>
+              <div className="stat">
+                <span className="stat-num">
+                  <AnimatedCounter target="50" suffix="+" />
+                </span>
+                <span className="stat-label">Equipment</span>
+              </div>
               <div className="stat-divider" />
-              <div className="stat"><span className="stat-num"><AnimatedCounter target="15" /></span><span className="stat-label">Expert Trainers</span></div>
+              <div className="stat">
+                <span className="stat-num">
+                  <AnimatedCounter target="15" />
+                </span>
+                <span className="stat-label">Expert Trainers</span>
+              </div>
               <div className="stat-divider" />
-              <div className="stat"><span className="stat-num">24/7</span><span className="stat-label">Access</span></div>
+              <div className="stat">
+                <span className="stat-num">24/7</span>
+                <span className="stat-label">Access</span>
+              </div>
             </div>
           </Reveal>
         </div>
