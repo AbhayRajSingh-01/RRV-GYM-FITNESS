@@ -2005,6 +2005,22 @@ ul {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .intro-text {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    letter-spacing: 0.18em;
+    padding: 0 0.75rem;
+  }
+
+  .intro-word {
+    font-size: clamp(2.2rem, 7vw, 3.2rem);
+  }
+
+  .intro-word.accent {
+    font-size: clamp(2.6rem, 8vw, 3.6rem);
+  }
+
   .section {
     padding: 4rem 0;
   }
