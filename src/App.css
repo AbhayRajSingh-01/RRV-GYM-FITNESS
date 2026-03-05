@@ -119,15 +119,19 @@ ul {
   color: var(--gray-100);
   transform-origin: center;
   animation: intro-zoom 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.75rem;
+  padding: 0 1.5rem;
 }
 
 .intro-word {
-  display: block;
-  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  display: inline-block;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
 }
 
 .intro-word.accent {
-  font-size: clamp(2.4rem, 5.5vw, 3.5rem);
+  font-size: clamp(3rem, 6.5vw, 4.5rem);
   color: var(--red-500);
   text-shadow:
     0 0 30px rgba(248, 113, 113, 0.9),
